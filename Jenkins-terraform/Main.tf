@@ -58,7 +58,7 @@ resource "aws_security_group" "Jenkins-sg" {
   }
 }
 
-resource "aws_instance" "main" {
+resource "aws_instance" "web" {
   ami                    = "ami-0df4b2961410d4cff"
   instance_type          = "t2.medium"
   key_name               = "na"
